@@ -286,7 +286,7 @@ a.list-group-item:hover>.badge{
 }
 
 .news_box{
-	margin-bottom:20px;
+	margin-bottom: 3px;
 }
 .most_rated_pin{
 	position:relative;
@@ -295,7 +295,12 @@ a.list-group-item:hover>.badge{
 	margin-left:115px;
 	padding-top:0px;
 }
-
+.label_block{
+	display:inline ;
+}
+.margin-left{
+	margin-left:10px !important;
+}
 
 
 @media(max-width:361px){ 
