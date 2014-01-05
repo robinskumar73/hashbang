@@ -55,7 +55,7 @@
                 "<h4>" + locale.link.insert + "</h4>" +
                 "</div>" +
                 "<div class='modal-body'>" +
-                "<input value='#' class='bootstrap-wysihtml5-insert-link-url form-control'>" +
+                "<input value='' placeholder='#' id='input_tag' class='bootstrap-wysihtml5-insert-link-url form-control'>" +
                 "</div>" +
                 "<div class='modal-footer'>" +
                 "<button class='btn btn-default' data-dismiss='modal'>" + locale.link.cancel + "</button>" +

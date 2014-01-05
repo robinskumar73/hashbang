@@ -14,6 +14,22 @@ $(document).ready(function(e) {
 		$("#post").click(function(){
 			custom_modal();
 		});
+		$("#signin").click(function(){
+			$("#myLoginModal").modal();
+		});
+		$("#post_story").click(function(){
+			$("#nextModal").modal();
+			$("#myLoginModal").modal('hide');
+		});
+		$("#next_button").click(function(){
+			$("#finalModal").modal();
+			$("#nextModal").modal('hide');
+		});
+		$("#enter_button").click(function(){
+			$("#finalModal").modal('hide');
+		});
+		
+		
 		
 	
 		
@@ -23,11 +39,17 @@ $(document).ready(function(e) {
 
 	var custom_modal = function(){
 			$("#myModal").modal({backdrop:false , keyboard:false});
+			//Assign autocomplete to tag_input_box
+			$("#input_tag").typeahead({
+		  		name: 'Insert tag',
+  		  		local: ['trail', 'mms', 'hey','amet', 'consectetur', 'adipisicing' ,'elit', 'sed' ,'eiusmod ','tempor', 'incididunt','labore','dolore ','magna ','aliqua','enim', 'ad ','minim' ,'veniam', 'quis']
+			});
 			
 	};
 	
 	
 	
+
 	//Assigning wysiwyg toolbar to textarea
 	$("#textbox").wysihtml5();
 

@@ -15,7 +15,130 @@
     <![endif]-->
     <link href="../static/style.css" rel="stylesheet">
   </head>
-  <body >      
+  <body > 
+  <div class="modal fade" id="myLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        			<h4 class="modal-title">Create A New Account</h4>
+                   
+                    <div class="alert alert-success alert_box" id="alert_box_success">Only Three Steps To Login</div>
+      			</div>
+      	<div class="modal-body">
+            	<form role="form">
+ 			<div class="form-group">
+    			<label for="exampleInputEmail1">Email address</label>
+   			   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+ 		   </div>
+ 		   <div class="form-group">
+   				 <label for="exampleInputPassword1">Password</label>
+    			 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  		   </div>
+           <div class="form-group">
+   				 <label for="exampleInputPassword2">Conform Password</label>
+    			 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+  		   </div>
+           		</form>
+      		</div>
+            <div class="progress progress-striped active">
+             <div class="progress-bar"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+          <span class="sr-only">0% Complete</span>
+          </div>
+		   </div>
+
+      		<div class="modal-footer">
+            	<button type="button" class="btn btn-primary" id="post_story">Next</button>
+                <button type="button" id="cancel_btn" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      		</div>
+    	</div><!-- /.modal-content -->
+  	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+    
+    <div class="modal fade" id="nextModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        			<h4 class="modal-title">My Alma Mater</h4>
+                   
+                    <div class="alert alert-success alert_box" id="alert_box_success">Only Two Steps To Go</div>
+      			</div>
+      	<div class="modal-body">
+            	<div class="form-group">
+ 				  <input type="text" class="form-control" placeholder="College Name">
+				</div>
+                <div class="form-group">
+ 				  <input type="text" class="form-control" placeholder="Year">
+				</div>
+                <div class="form-group">
+ 				  <input type="text" class="form-control" placeholder="Branch">
+				</div>
+                <div class="form-group">
+ 				  <input type="text" class="form-control" placeholder="City">
+				</div>
+      		</div>
+            <div class="progress progress-striped active">
+             <div class="progress-bar"  role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width:33%">
+          <span class="sr-only">33% Complete</span>
+          </div>
+		   </div>
+      		<div class="modal-footer">
+            	<button type="button" class="btn btn-primary" id="next_button">Next</button>
+                <button type="button" id="cancel_btn" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      		</div>
+    	</div><!-- /.modal-content -->
+  	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+    
+    <div class="modal fade" id="finalModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        			<h4 class="modal-title">Build Your TimeLine</h4>
+                   
+                    <div class="alert alert-success alert_box" id="alert_box_success">Only Two Steps To Go</div>
+      			</div>
+      	<div class="modal-body">
+        <div class="col-xs-12 col-sm-8 col-md-8 ">
+        <textarea class="form-control" rows="8"></textarea>
+
+        </div>
+         <div class="col-xs-12 col-sm-4 col-md-4" style="text-align:centre">
+         <span class="label label-default">#oneTwoThree</span><br><br>
+         <span class="label label-default">#fourFive</span><br><br>
+         <span class="label label-default">#sixSeven</span><br><br>
+         <span class="label label-default">#eightNineTen</span><br><br>
+         <span class="label label-default">#eleven</span><br><br>
+         </div>
+       </div>
+      		<div class="modal-footer">
+            <div class="progress progress-striped active">
+             <div class="progress-bar"  role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width:66%">
+         		 <span class="sr-only">66% Complete</span>
+         	 </div>
+		    </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 ">
+            <h5 style="text-align:left">Privacy Policy</h5>
+
+            <div class="checkbox">
+    		<label>
+    		  <input type="checkbox"> I Agree
+   		   </label>
+           
+  			</div>
+            </div>
+             <div class="col-xs-12 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5">
+            	<button type="button" class="btn btn-primary" id="enter_button">Enter Now</button>
+                </div>
+                
+      		</div>
+            
+    	</div><!-- /.modal-content -->
+  	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+     
   
  	<div class="container" >
       <div class="row" >
@@ -31,7 +154,7 @@
         	<a class="col-md-1  glyphicon glyphicon glyphicon-edit " style="margin-top:2.8px" href="#"> </a>
       			<a class="col-md-6 text-primary" style="font-size:120%;line-height:1.3;padding-left:5px;" href="#">Create a Post</a>
             <a class="col-md-1  glyphicon glyphicon-off" href="#" style="margin-top:2.8px"></a>
-            <span class="col-md-3 text-primary" style="font-size:120%;line-height:1.3;padding-left:5px;">Sign Out</span>
+            <a class="col-md-3 text-primary" style="font-size:120%;line-height:1.3;padding-left:5px;" id="signin">Sign In</a>
             <a class="col-md-1 glyphicon glyphicon-tasks menu_icon" id="menu_icon" href="#" style="margin-top:2.8px"></a>
             <div class="list-group list_menu" id="list_menu"><!--DIV FOR LIST MENU START HERE-->
   				<a href="#" class="list-group-item active">Ravi Gupta</a>
