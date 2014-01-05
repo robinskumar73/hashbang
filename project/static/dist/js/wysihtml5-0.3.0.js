@@ -6915,12 +6915,18 @@ wysihtml5.Commands = Base.extend(
         textContent,
         whiteSpace,
         j;
+		
     wysihtml5.commands.formatInline.exec(composer, undef, NODE_NAME, tempClass, tempClassRegExp);
     anchors = doc.querySelectorAll(NODE_NAME + "." + tempClass);
     length  = anchors.length;
     for (; i<length; i++) {
       anchor = anchors[i];
       anchor.removeAttribute("class");
+	  anchor.title=attributes.href;
+	  var title_node=document.createTextNode(attributes.href);
+	  //Modifying href manually ..Robin
+	  attributes.href= "?search_tag="+attributes.href;
+	  anchor.appendChild(title_node)
       for (j in attributes) {
         anchor.setAttribute(j, attributes[j]);
       }
@@ -6965,7 +6971,9 @@ wysihtml5.Commands = Base.extend(
         });
       } else {
         // Create links
+		var link_title=value.href;
         value = typeof(value) === "object" ? value : { href: value };
+		
         _format(composer, value);
       }
     },
@@ -8187,6 +8195,7 @@ wysihtml5.views.View = Base.extend(
           // Only set href when new href looks like a valid url
           if (newTextContent.match(urlRegExp)) {
             link.setAttribute("href", newTextContent);
+		
           }
         }, 0);
       });
