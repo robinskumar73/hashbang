@@ -111,16 +111,17 @@ h5.bluish_black{
 	font-size:30px;
 	font-stretch:expanded;
 }
+
 .submit_search_btn{
 	border-radius:0 3px 3px 0;
 	background-color:#333;
 	border:none;
 	margin-top:5px;
 	max-height:30px;
-	color:#999;
+	color:#999 ;
 }
 .submit_search_btn:hover{
-	background-color:#222;
+	background-color:#222 !important;
 	color:#fff;
 	border:#333;
 	border-radius:3px !important;
@@ -301,6 +302,35 @@ a.list-group-item:hover>.badge{
 .margin-left{
 	margin-left:10px !important;
 }
+
+textarea.form-control{
+	
+}
+/*Setting for modal*/
+div.modal{
+	
+}
+.heading_edit_box{
+	height:40px;
+	margin-bottom:10px;
+}
+.text_box{
+	margin-top:7px;
+	
+}
+.alert_box{
+	display:none;
+	margin-bottom:0px;
+}
+.modal-body{
+	padding-top:10px;
+}
+.heading_font{
+	font-size:17px;
+	color:#333;
+	font-weight:bold;
+}
+
 
 
 @media(max-width:361px){ 

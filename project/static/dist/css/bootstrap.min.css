@@ -6555,6 +6555,10 @@ th.hidden-lg,td.hidden-lg{
 	.hidden-lg.hidden-md,tr.hidden-lg.hidden-md,th.hidden-lg.hidden-md,td.hidden-lg.hidden-md{
 		display:none!important
 	}
+	.wysihtml5-sandbox{
+		height:470px ;
+		max-height:470px;
+	}
 
 }
 

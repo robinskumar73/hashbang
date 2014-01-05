@@ -6,6 +6,8 @@
     <!-- Bootstrap -->
     <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../static/favicon_1.png" />
+    <link href="../static/dist/css/bootstrap-wysihtml5.css" rel="stylesheet">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,7 +18,33 @@
     <link href="../static/style.css" rel="stylesheet">
   </head>
   <body >      
+  	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        			<h4 class="modal-title">Post a Story</h4>
+                    <div class="alert alert-warning alert_box">This is a warning..</div>
+                    <div class="alert alert-success alert_box" id="alert_box_success">This is a success box</div>
+      			</div>
+      		<div class="modal-body">
+            	
+            	<input class="form-control input-lg heading_edit_box" type="text" placeholder="Heading">
+        		<textarea class="form-control text_box"  id="textbox" rows="15" placeholder="Content Area"></textarea>
+      		</div>
+      		<div class="modal-footer">
+            	<button type="button" class="btn btn-primary" id="post_story">Post</button>
+        		<button type="button" class="btn btn-primary">Post Later</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      		</div>
+    	</div><!-- /.modal-content -->
+  	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
   
+  
+  
+  <!--MODAL ENDS HERE-->
  	<div class="container" >
       <div class="row" >
       	<div class="col-xs-12 col-sm-8 col-md-8 ">
@@ -28,8 +56,10 @@
 			</ul>
         </div>
       	<div class="col-xs-12 col-sm-4 col-md-4" style="margin-top:6px; padding-left:10px">
-        	<a class="col-md-1  glyphicon glyphicon glyphicon-edit " style="margin-top:2.8px" href="#"> </a>
-      			<a class="col-md-6 text-primary" style="font-size:120%;line-height:1.3;padding-left:5px;" href="#">Create a Post</a>
+        	<div id="post">
+        		<a class="col-md-1  glyphicon glyphicon glyphicon-edit " style="margin-top:2.8px" href="#"> </a>
+      			<a class="col-md-6 text-primary" style="font-size:120%;line-height:1.3;padding-left:5px;" href="#" data-toggle="modal">Create a Post</a>
+             </div>
             <a class="col-md-1  glyphicon glyphicon-off" href="#" style="margin-top:2.8px"></a>
             <span class="col-md-3 text-primary" style="font-size:120%;line-height:1.3;padding-left:5px;">Sign Out</span>
             <a class="col-md-1 glyphicon glyphicon-tasks menu_icon" id="menu_icon" href="#" style="margin-top:2.8px"></a>
@@ -157,7 +187,7 @@
       		<div class="form-group input-group ">
         		<input type="text" class="form-control search" placeholder="#Tags">
       		</div>
-            <button type="submit" class="btn btn-default submit_search_btn ">Go</button>	
+            <button type="submit" class="btn btn-inverse submit_search_btn " style="background-color:#333;">Go</button>	
     	</form>
     	<div class="input-group col-xs-12 col-sm-4 col-md-4  navbar-form navbar-right  hash_comment">
   			<span class="input-group-addon hash_comment_group hash_tag_corner">#</span>
@@ -170,6 +200,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../static/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/dist/js/wysihtml5-0.3.0.min.js"></script>
+    <script type="text/javascript" src="../static/dist/js/bootstrap-wysihtml5.js" ></script>
     <script type="text/javascript" src="../static/dist/js/myscript.js"></script>
   </body>
 </html>
