@@ -9,7 +9,7 @@
 }
 
 body{
-	background-image:url(../static/paper.jpg);
+	background-image:url(shutterstock/paper-17.jpg);
 	padding-bottom: 70px; /*For navbar alignment*/
 }
 
@@ -65,21 +65,20 @@ div{
 .promoted_tags{
 	display:inline-block;
 	margin:0 5px 5px 0;
-	padding-right:10px;
-	color:#999;
-	font-size:16px;
+	color:#008494;
+	font-size:15px;
 	
 }
 .recent_tags{
 	display:inline-block;
 	margin:0 5px 5px 0;
 	padding-right:10px;
-	color:#999;
+	color:#008494;
 	font-size:15px;
 }
 a.active_tag{
-	font-size:18px;
-	color:#2a6496	
+	font-size: 18px;
+	color: #C2264E
 }
 .tag_box{
 	
@@ -87,7 +86,7 @@ a.active_tag{
 	-moz-box-shadow: 1px 1px 1px  2px #cbc5c5;
 	-webkit-box-shadow:1px 1px 1px  2px #d1cfcf;
 	box-shadow:1px 1px 1px  2px #d1cfcf;
-	
+	background-image:url(paper.jpg);
 }
 
 .pin_2{

@@ -2163,9 +2163,9 @@ textarea.input-lg{
 }
 
 .btn-warning{
-	color:#fff;
-	background-color:#f0ad4e;
-	border-color:#eea236
+	color: #fff;
+	background-color: #C2264E;
+	border-color: #eea236
 }
 
 .btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active,.open .dropdown-toggle.btn-warning{
@@ -4677,16 +4677,16 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .label{
-	display:inline;
-	padding:.2em .6em .3em;
-	font-size:75%;
-	font-weight:bold;
-	line-height:1;
-	color:#fff;
-	text-align:center;
-	white-space:nowrap;
-	vertical-align:baseline;
-	border-radius:.25em
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	/* [disabled]vertical-align:baseline; */
+	border-radius: 0.25em
 }
 
 .label[href]:hover,.label[href]:focus{

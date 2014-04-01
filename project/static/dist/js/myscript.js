@@ -28,11 +28,6 @@ $(document).ready(function(e) {
 		$("#enter_button").click(function(){
 			$("#finalModal").modal('hide');
 		});
-		
-		
-		
-	
-		
 	 //Events encaptulation ends
 	 })();
 	

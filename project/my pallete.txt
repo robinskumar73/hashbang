@@ -1,0 +1,2 @@
+COlor combination : 
+pallete-1 ::: --- BLACK #2B2B2B maroon #C2264E bluish-blue #008494 greyish-white #ECECEC
